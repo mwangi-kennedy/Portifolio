@@ -211,7 +211,7 @@ const projects = [
 
         <div className="hero-right">
           <div className="hero-circle">
-            <img src="src/assets/profile.png" alt="Profile" />
+            <img src="/profile.png" alt="Profile" />
           </div>
           
         </div>
@@ -269,7 +269,7 @@ const projects = [
     <div className="about-left">
       <div className="about-circle">
         <img
-          src="src/assets/profile.png" alt="About"
+          src="/profile.png" alt="About"
         />
       </div>
     </div>
