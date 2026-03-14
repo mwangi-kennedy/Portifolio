@@ -1,6 +1,6 @@
 import React , { useEffect, useRef, useState } from "react";
 import "./index.css";
-import { FaGithub, FaCode, FaRobot, FaChartLine, FaNetworkWired, FaPaintBrush, FaCube, FaLaptopCode,   FaLinkedin, FaEnvelope, FaExternalLinkAlt, FaPython, FaDatabase, FaChartBar } from "react-icons/fa";
+import { FaGithub,FaCode,FaRobot,FaChartLine,FaNetworkWired,FaPaintBrush,FaCube,FaLaptopCode,FaLinkedin,FaEnvelope,FaExternalLinkAlt,FaPython,FaDatabase,FaChartBar,FaWhatsapp,FaTwitter} from "react-icons/fa";
 import { motion } from "framer-motion";
 
 function App() {
@@ -94,7 +94,46 @@ const certifications = [
   "Cisco Internet of Things (IoT) ",
 ];
 
+const testimonials = [
+  {
+    name: "Patrick N. Gitonga",
+    role: "Head of Department",
+    company: "DeKUT Film, Animation and Gaming Hub",
+    text: "Mr. Kiruri completed his industrial attachment at the DeKUT Film Hub, gaining hands-on experience in digital media production and animation. He demonstrated strong teamwork, effective communication, and contributed valuable ideas during projects. Beyond his technical abilities, he proved disciplined, respectful, and reliable, with integrity and a strong willingness to learn. Based on his skills, character, and work ethic, I confidently recommend Mr. Kiruri for professional, academic, or training opportunities where he can continue to grow and contribute meaningfully.",
+  },
+  {
+    name: "Madam Liz Wahome",
+    role: "Guild Code Community Lead",
+    company: "Guild Code",
+    text: "Kennedy is a natural leader with a strong ability to inspire and guide teams towards achieving common goals. He possesses excellent communication skills, fostering collaboration and creating a positive team environment. Kennedy's leadership style is inclusive and empowering, allowing team members to thrive and contribute their best work. He consistently demonstrates integrity, accountability, and a commitment to excellence in his leadership approach.",
+    image: "/testimonial2.jpg"
+  },
+  {
+    name: "Alex N. Mwangi",
+    role: "MUKUSA Chairperson",
+    company: "Murang'a Kimathi University Students Association",
+    text: "A highly motivated professional with strong problem-solving skills. As a Graphic Designer, Kennedy consistently delivered high-quality work, respected deadlines, and collaborated effectively with team members. Later, as Treasurer of the Association, he demonstrated trustworthiness, strong leadership, effective communication, and integrity in managing responsibilities.",
+    image: "/testimonial3.jpg"
+  }
+];
+
 const experience = [
+  {
+  title: "Team Lead - Climate-Tech Team",
+  company: "Guild Code Community",
+  period: "March 2026 - July 2026",
+  location: "Remote, Kenya",
+  description:
+    "Lead a multidiscplinary team in the design and development of a digital climate-tech solution aimed at addressing climate challenges in Africa through data-driven insights and modern web technologies.",
+  achievements: [
+    "Led a 7-member cross-functional team through the full product development lifecycle from problem discovery to MVP development.",
+    "Coordinated research to identify real climate challenges and data sources relevant to African communities.",
+    "Designed the system architecture and guided integration between frontend interfaces and backend services.",
+    "Facilitated weekly planning meetings and milestone tracking to ensure steady progress across the project timeline.",
+    "Collaborated with developers and designers to build a functional climate-tech digital product."
+  ],
+  tools: ["Project Leadership", "Team Coordination", "Collaboration", "Data-Driven Decision Making", "Version Control", "Data Analysis"]
+},
   {
   title: "Data Analyst Intern",
   company: "Codveda Technologies",
@@ -103,12 +142,12 @@ const experience = [
   description:
     "Delivered data analysis and reporting solutions for small businesses and independent clients.",
   achievements: [
-    "Built custom Excel and Power BI dashboards for sales and performance tracking",
-    "Automated reporting workflows using Python scripts",
-    "Performed data cleaning and transformation for structured reporting",
-    "Provided actionable insights to support business decisions"
+    "Built custom Excel and Power BI dashboards for sales and performance tracking.",
+    "Automated reporting workflows using Python scripts.",
+    "Performed data cleaning and transformation for structured reporting.",
+    "Provided actionable insights to support business decisions."
   ],
-  tools: ["Python", "Tableau", "Power BI", "SQL"]
+  tools: ["Data Visualization", "Tableau", "Power BI", "SQL"]
 }
 ,
   {
@@ -117,49 +156,72 @@ const experience = [
   period: "November 2025",
   location: "Kenya",
   description:
-    "Delivered data analysis and reporting solutions for small businesses and independent clients.",
+    "Analyzed business data and delivered structured reports to help small businesses and independent clients improve performance and make informed decisions.",
   achievements: [
-    "Built custom Excel and Power BI dashboards for sales and performance tracking",
-    "Automated reporting workflows using Python scripts",
-    "Performed data cleaning and transformation for structured reporting",
-    "Provided actionable insights to support business decisions"
+    "Developed interactive dashboards in Excel and Power BI to monitor sales trends and operational performance.",
+    "Streamlined reporting processes by creating automated data workflows using Python.",
+    "Cleaned, structured, and transformed raw datasets to ensure accurate and reliable analysis.",
+    "Generated data-driven insights to support informed business and strategic decision-making."
   ],
-  tools: ["Python", "Tableau", "Power BI", "SQL"]
+  tools: ["Dashboard Development", "Data Reporting", "Data Interpretation", "Exploratory Data Analysis (EDA )"]
 }
 ];
 
 const projects = [
   {
-  title: "Data Analytics",
+  title: "Data Analytics Dashboard",
   image: "/data.png",
-  desc: "An interactive data analytics dashboard to monitor key business KPIs, performing data cleaning, transformation, and exploratory analysis using Python and SQL. Delivered actionable insights through dynamic visualizations, enabling data-driven decision-making and performance optimization.",
-  skills: ["SQL", "Pandas", "Tableau", "Python", "Numpy"],
+  problem: "Businesses often struggle to monitor key performance indicators due to fragmented datasets and lack of centralized analytics tools.",
+  solution: "Developed an interactive analytics dashboard using Python and SQL to clean, transform, and analyze data. Implemented dynamic visualizations in Tableau to allow users to explore KPIs and uncover trends easily.",
+  result: "Provided clear, actionable insights that improved visibility into business performance and supported more informed data-driven decision-making.",
+  skills: ["SQL", "Pandas", "Tableau", "Python", "NumPy"],
   role: "Data Analyst",
+  summary: "Interactive dashboard for monitoring business KPIs and enabling data-driven decisions.",
   link: "https://github.com/mwangi-kennedy/Titanic-Analysis"
 },
   {
-  title: "Website Development",
+  title: "Hotel Website Development",
   image: "/web.png",
-  desc: "Developed a responsive hotel website featuring room listings, booking functionality, and a photo gallery. Implemented a modern UI/UX with smooth navigation, ensuring users can easily explore services, make reservations, and contact the hotel. Optimized for both desktop and mobile devices for a seamless user experience.",
-  skills: ["HTML", "CSS", "Javascript", "React"],
+  problem: "Hotels need an online presence where potential guests can easily explore rooms, view amenities, and make reservations. Many small hotel websites lack modern design, responsiveness, and smooth navigation.",
+  solution: "Developed a responsive hotel website using HTML, CSS, JavaScript, and React. Implemented room listings, a booking interface, and a photo gallery with a modern UI/UX to ensure smooth navigation and easy access to hotel services.",
+  result: "Created a user-friendly platform that allows visitors to explore rooms, view services, and make reservations seamlessly across desktop and mobile devices.",
+  skills: ["HTML", "CSS", "JavaScript", "React"],
   role: "Frontend Developer",
+  summary: "Responsive hotel website with room listings, booking interface, and modern UI/UX.",
   link: "https://kadeeh-luxury.vercel.app/"
 },
   {
-  title: "Mobile Application Development",
+  title: "AI-Powered Mobile Application",
   image: "/app.png",
-  desc: "An android AI-powered mobile application that offers \"power in the pocket\" by providing users with instant access to an AI tool designed for protest. The app features a user-friendly interface that allows users to easily navigate, including natural language processing, image recognition, and machine learning capabilities.",
-  skills: ["Tensorflow", "ML Pipelines", "API Integration", "NLP", "Testing"],
+  problem: "Accessing AI-powered tools for real-time assistance and information can be difficult for users who rely primarily on mobile devices.",
+  solution: "Developed an Android AI-powered mobile application that brings 'power in the pocket' by integrating machine learning capabilities such as natural language processing, image recognition, and API-based AI services. Designed a user-friendly interface to allow seamless interaction with the AI features.",
+  result: "Delivered a mobile platform that enables users to access intelligent tools directly from their phones, making AI-driven insights and assistance easily available in real time.",
+  skills: ["TensorFlow", "ML Pipelines", "API Integration", "NLP", "Testing"],
   role: "Mobile Developer",
+  summary: "Android AI-powered mobile application integrating NLP, image recognition, and machine learning tools.",
   link: "https://github.com/mwangi-kennedy/Bridgeforce"
 },
   {
   title: "UI/UX Design",
   image: "/UI.png",
-  desc: "Designed wireframes and high-fidelity prototypes in Figma for a multi-service tech platform, delivering a modern, scalable, and user-friendly interface for client onboarding and service navigation.",
+  problem: "Many tech platforms struggle with complex interfaces that make it difficult for users to navigate services and complete onboarding efficiently.",
+  solution: "Designed intuitive wireframes and high-fidelity prototypes in Figma for a multi-service tech platform. Focused on clear navigation, structured layouts, and modern visual design to improve usability and guide users smoothly through service exploration and onboarding.",
+  result: "Delivered a scalable and user-friendly interface concept that simplifies service navigation and enhances the overall user experience for new and returning users.",
   skills: ["Figma", "Wireframing", "Prototyping", "UI/UX Design"],
   role: "UI/UX Designer",
+  summary: "Figma-based UI/UX design for a multi-service tech platform focusing on intuitive navigation and modern user experience.",
   link: "https://www.figma.com/design/OP5KLrUSRM8pJKJcUoSNQw/Ken-Media-UI?node-id=0-1&t=2FFSWu8liwycrm5j-1"
+},
+{
+  title: "Graphic Design",
+  image: "/moneyversation.jpg",
+  problem: "Brands often struggle to communicate messages clearly and consistently across digital platforms without strong visual identity and engaging design.",
+  solution: "Created visually engaging graphics and digital assets using Adobe Photoshop and Illustrator. Focused on modern layouts, strong typography, and balanced color schemes to ensure clear communication and brand consistency across web and social media platforms.",
+  result: "Delivered visually compelling designs that enhance brand presentation, improve audience engagement, and maintain a consistent visual identity across digital channels.",
+  skills: ["Adobe Photoshop", "Adobe Illustrator", "Typography", "Color Theory"],
+  role: "Graphic Designer",
+  summary: "Digital graphic designs focused on strong visual hierarchy, branding consistency, and engaging social media content.",
+  link: "https://drive.google.com/drive/folders/1VR6JpCj0RMhwKMA_QAh-1dqs_EYwKNDz?usp=sharing"
 }
 ];
 
@@ -186,6 +248,7 @@ const projects = [
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -194,6 +257,7 @@ const projects = [
         <div className="hero-left">
           <h1 className="hero-role">Kennedy Mwangi</h1>
           <h2 className="hero-name">Data Analyst | Exploring Networking & Building User-Focused Intelligent Software</h2>
+          <p className="hero-desc"> Building intelligent, data-driven solutions that bridge the gap between complex backend systems and user-centric interfaces.</p>
 
           <div className="social-icons">
             <a href="https://github.com/mwangi-kennedy" target="_blank" rel="noreferrer">
@@ -356,7 +420,7 @@ const projects = [
         </ul>
 
         <div className="tools-section">
-          <strong>Tools & Technologies:</strong>
+          <strong>Tools, Technologies and Skills Gained:</strong>
           <div className="tools-list">
             {exp.tools?.map((tool, i) => (
               <span key={i} className="tool-badge">
@@ -371,54 +435,118 @@ const projects = [
 </section>
 
       <section className="section-light" id="projects">
-        <h2 className="section-title">Featured Projects</h2>
+  <h2 className="section-title">Featured Projects</h2>
 
-        <div className="card-grid">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              className="project-card"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15 }}
-              viewport={{ once: true }}
-            >
-              <img src={project.image} alt={project.title} />
-              <div className="project-body">
-        <h3 className="project-title">{project.title}</h3>
-  <p className="project-desc">{project.desc}</p>
-  {project.role && (
-    <p className="project-role">
-      <strong>Role:</strong> {project.role}
-    </p>
-  )}
+  <div className="card-grid">
+    {projects.map((project, index) => (
+      <motion.div
+        key={index}
+        className="project-card"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.15 }}
+        viewport={{ once: true }}
+      >
+        <img src={project.image} alt={project.title} />
 
-  {project.skills && project.skills.length > 0 && (
-    <div className="project-skills">
-      <strong>Skills:</strong>
-      <div className="skills-badges">
-        {project.skills.map((skill, i) => (
-          <span key={i} className="skill-badge">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-  )}
-  <a
-    href={project.link}
-    className="project-btn"
-    target="_blank"
-    rel="noopener noreferrer">
-    View Project <FaExternalLinkAlt />
-  </a>
-</div>
-
-
-            </motion.div>
-          ))}
+        <div className="project-body">
+          <h3 className="project-title">{project.title}</h3>
+          {project.summary && <p className="project-desc">{project.summary}</p>}
+          {project.problem && (
+            <p className="project-desc">
+              <strong>Problem:</strong> {project.problem}
+            </p>
+          )}
+          {project.solution && (
+            <p className="project-desc">
+              <strong>Solution:</strong> {project.solution}
+            </p>
+          )}
+          {project.result && (
+            <p className="project-desc">
+              <strong>Result:</strong> {project.result}
+            </p>
+          )}
+          {project.role && (
+            <p className="project-role">
+              <strong>Role:</strong> {project.role}
+            </p>
+          )}
+          {project.skills && project.skills.length > 0 && (
+            <div className="project-skills">
+              <strong>Skills:</strong>
+              <div className="skills-badges">
+                {project.skills.map((skill, i) => (
+                  <span key={i} className="skill-badge">{skill}</span>
+                ))}
+              </div>
+            </div>
+          )}
+          <a
+            href={project.link}
+            className="project-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project <FaExternalLinkAlt />
+          </a>
         </div>
-      </section>
+      </motion.div>
+    ))}
+  </div>
+</section>
+
+<section className="section-dark" id="testimonials">
+  <h2 className="section-title">Testimonials</h2>
+  <p className="section-subtitle">What People Say About Me</p>
+
+  <div className="testimonials-container">
+    {testimonials.map((item, index) => (
+      <motion.div
+        key={index}
+        className="testimonial-card"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: index * 0.2 }}
+        viewport={{ once: true }}
+      >
+        <div className="testimonial-header">
+          <div>
+            <h3>{item.name}</h3>
+            <span>
+              {item.role} • {item.company}
+            </span>
+          </div>
+          <div className="testimonial-stars" style={{ display: 'flex', gap: '2px', fontSize: '1.2rem' }}>
+            <span style={{ color: '#ff7a00 ' }}>★</span>
+            <span style={{ color: '#ff7a00  ' }}>★</span>
+            <span style={{ color: '#ff7a00  ' }}>★</span>
+            <span style={{ color: '#ff7a00 ' }}>★</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+            >
+              <defs>
+                <linearGradient id="half-grad">
+                  <stop offset="50%" stopColor="#ff7a00 " />
+                  <stop offset="50%" stopColor="#ccc" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#half-grad)"
+                d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.78 1.402 8.175L12 18.896l-7.336 3.86 1.402-8.175L.132 9.21l8.2-1.192L12 .587z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <p className="testimonial-text">"{item.text}"</p>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
 <section className="contact" id="contact">
   <div className="contact-container">
@@ -511,44 +639,102 @@ const projects = [
 </section>
 
 <footer className="footer">
-  <div className="footer-links">
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
 
-  <div className="footer-icons">
-    <a href="mailto:kenmwangi273@gmail.com">
-      <FaEnvelope />
-    </a>
+      <div className="footer-container">
+        <div className="footer-about">
+          <h2>Kennedy Mwangi</h2>
+          <p>
+            Multidisciplinary professional skilled in Data Analytics, UI/UX Design, Machine Learning, Frontend Development, 3D Animation, and Graphic Design. Builds data-driven solutions, interactive dashboards, and engaging designs that help businesses make informed decisions.
+          </p>
+        </div>
+        <div className="footer-column">
+          <h3>Navigation</h3>
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div className="footer-column">
+          <h3>Services</h3>
+          <p>Data Analytics</p>
+          <p>UI/UX Design</p>
+          <p>Machine Learning</p>
+          <p>Frontend Development</p>
+          <p>3D Animation</p>
+          <p>Graphic Design</p>
+        </div>
+        <div className="footer-column">
+          <h3>Connect</h3>
 
-    <a href="tel:0790036399">
-      📞
-    </a>
+          <p>
+            <FaEnvelope /> kenmwangi273@gmail.com
+          </p>
 
-    <a
-      href="https://www.linkedin.com/in/kennedy-mwangi-tech/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <FaLinkedin />
-    </a>
-  </div>
+          <p>
+            <FaWhatsapp /> 0790036399
+          </p>
 
-  <div className="footer-contact">
-    <p>
-      <FaEnvelope /> kenmwangi273@gmail.com
-    </p>
-    <p>📞 0790036399</p>
-  </div>
+          <div className="footer-icons">
 
-  <p className="footer-copy">
-    © {new Date().getFullYear()} Kennedy Mwangi. Powered by Vercel.
-  </p>
-</footer>
+            <a
+              href="https://github.com/mwangi-kennedy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/kennedy-mwangi-tech/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="https://x.com/dynamix16302784"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaTwitter />
+            </a>
+
+            <a href="mailto:kenmwangi273@gmail.com">
+              <FaEnvelope />
+            </a>
+
+            <a
+              href="https://wa.me/254790036399"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+
+          </div>
+          <a href="#home" className="back-top">↑</a>
+        </div>
+
+      </div>
+      <div className="footer-bottom">
+
+        <p>
+          © {new Date().getFullYear()} Kennedy Mwangi. All rights reserved.
+        </p>
+
+        <p className="footer-status">
+          <span className="status-dot"></span>
+          Available for new projects
+        </p>
+
+        <p>Nairobi, Kenya • Powered by Vercel</p>
+
+      </div>
+
+    </footer>
 
 
     </>
