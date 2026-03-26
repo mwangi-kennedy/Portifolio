@@ -37,14 +37,12 @@ const handleSubmit = async (e) => {
 const skillsRef = useRef(null);
 
 const [skills, setSkills] = useState([
-  { name: "Software Engineering", icon: <FaCode />, percentage: 80},
-  { name: "Data Analytics", icon: <FaChartLine />, percentage: 88},
-  { name: "UI/UX Design", icon: <FaLaptopCode />, percentage: 90},
-  { name: "AI / ML", icon: <FaRobot />, percentage: 65},
-  { name: "Frontend Development", icon: <FaCode />, percentage: 87},
-  { name: "Graphic Design", icon: <FaPaintBrush />, percentage: 92},
-  { name: "3D Animation", icon: <FaCube />, percentage: 78},
-  { name: "Networking", icon: <FaNetworkWired />, percentage: 65}
+  { name: "Data Analytics", icon: <FaChartLine />, percentage: 80, description: "Data Cleaning, Visualization, Dashboard Development, Business Intelligence, Tableau, SQL, Python, Power BI & Excel" },
+  { name: "Frontend Development", icon: <FaLaptopCode />, percentage: 78, description: "HTML, CSS, JavaScript, React.js, Responsive Design & Performance Optimization" },
+  { name: "UI/UX Design", icon: <FaLaptopCode />, percentage: 77, description: "Wireframing, Prototyping, User Research, Figma & User-Centered Design Principles" },
+  { name: "Software Engineering", icon: <FaCode />, percentage: 75, description: "Mobile & Web Application Development, REST APIs, Database Design & System Architecture" },
+  { name: "Graphic Design", icon: <FaPaintBrush />, percentage: 70, description: "Brand Identity, Visual Communication, Typography, Illustrations & Digital Media Design" },
+  { name: "AI / ML", icon: <FaRobot />, percentage: 65, description: "Machine Learning Models, Data Science, Python, Predictive Analytics & AI Integration" },
 ]);
 
 useEffect(() => {
@@ -90,7 +88,7 @@ const certifications = [
   "Data Visualization with PromptBI ",
   "Postman API Fundamentals Student Expert",
   "Cisco Network Administration ",
-  "KIEP-SKIES 3D Animation ",
+  "Google Sheets for Data Analysis by Google Cloud ",
   "Cisco Internet of Things (IoT) ",
 ];
 
@@ -256,8 +254,8 @@ const projects = [
       <section className="hero" id="home">
         <div className="hero-left">
           <h1 className="hero-role">Kennedy Mwangi</h1>
-          <h2 className="hero-name">Data Analyst | Exploring Networking & Building User-Focused Intelligent Software</h2>
-          <p className="hero-desc"> Building intelligent, data-driven solutions that bridge the gap between complex backend systems and user-centric interfaces.</p>
+          <h2 className="hero-name">Data Scientist & Software Engineer | Building Intelligent, Data-Driven & User-Focused Digital Solutions.</h2>
+          <p className="hero-desc"> I sit at the intersection of Data, Technology and Design. From analyzing complex datasets and building AI-powered systems to crafting beautiful, responsive interfaces bringing a full-spectrum approach to solving meaningful problems across Africa and beyond.</p>
 
           <div className="social-icons">
             <a href="https://github.com/mwangi-kennedy" target="_blank" rel="noreferrer">
@@ -321,6 +319,7 @@ const projects = [
 
                 <h3>{skill.name}</h3>
                 <span>{skill.percentage}%</span>
+                <p className="skill-description">{skill.description}</p>
               </div>
             );
           })}
@@ -367,7 +366,7 @@ const projects = [
 <section className="section-light certifications-section">
   <div className="certifications-container">
     <h2 className="section-title">
-      <span className="icon"></span> Certifications & Training
+      <span className="icon"></span> Certifications & Badges
     </h2>
 
     <div className="cert-grid">
@@ -644,7 +643,7 @@ const projects = [
         <div className="footer-about">
           <h2>Kennedy Mwangi</h2>
           <p>
-            Multidisciplinary professional skilled in Data Analytics, UI/UX Design, Machine Learning, Frontend Development, 3D Animation, and Graphic Design. Builds data-driven solutions, interactive dashboards, and engaging designs that help businesses make informed decisions.
+            Multidisciplinary professional skilled in Data Analytics, Software Engineering, UI/UX Design, Machine Learning, Frontend Development and Graphic Design. Builds data-driven solutions, interactive dashboards, and engaging designs that help businesses make informed decisions.
           </p>
         </div>
         <div className="footer-column">
@@ -659,9 +658,9 @@ const projects = [
         <div className="footer-column">
           <h3>Services</h3>
           <p>Data Analytics</p>
+          <p>Frontend Development</p>
           <p>UI/UX Design</p>
           <p>Machine Learning</p>
-          <p>Frontend Development</p>
           <p>3D Animation</p>
           <p>Graphic Design</p>
         </div>
