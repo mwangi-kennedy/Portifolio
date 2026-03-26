@@ -694,7 +694,7 @@ const projects = [
             </a>
 
             <a
-              href="https://x.com/dynamix16302784"
+              href="https://x.com/dev_mwangy"
               target="_blank"
               rel="noreferrer"
             >
