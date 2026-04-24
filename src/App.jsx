@@ -88,6 +88,7 @@ const certifications = [
   "Data Visualization with PromptBI ",
   "Postman API Fundamentals Student Expert",
   "Cisco Network Administration ",
+  "AWS AI Practitioner Challenge ",
   "Google Sheets for Data Analysis by Google Cloud ",
   "Cisco Internet of Things (IoT) ",
 ];
