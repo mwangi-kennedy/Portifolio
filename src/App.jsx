@@ -37,12 +37,11 @@ const handleSubmit = async (e) => {
 const skillsRef = useRef(null);
 
 const [skills, setSkills] = useState([
-  { name: "Data Analytics", icon: <FaChartLine />, percentage: 80, description: "Data Cleaning, Visualization, Dashboard Development, Business Intelligence, Tableau, SQL, Python, Power BI & Excel" },
-  { name: "Frontend Development", icon: <FaLaptopCode />, percentage: 78, description: "HTML, CSS, JavaScript, React.js, Responsive Design & Performance Optimization" },
+  { name: "AI / ML", icon: <FaRobot />, percentage: 85, description: "Machine Learning Models, Data Science, Python, Predictive Analytics & AI Integration" },
+  { name: "Data Engineering", icon: <FaChartLine />, percentage: 80, description: "Data Cleaning, Visualization, Dashboard Development, Business Intelligence, Tableau, SQL, Python, Power BI & Excel" },
   { name: "UI/UX Design", icon: <FaLaptopCode />, percentage: 77, description: "Wireframing, Prototyping, User Research, Figma & User-Centered Design Principles" },
   { name: "Software Engineering", icon: <FaCode />, percentage: 75, description: "Mobile & Web Application Development, REST APIs, Database Design & System Architecture" },
   { name: "Graphic Design", icon: <FaPaintBrush />, percentage: 70, description: "Brand Identity, Visual Communication, Typography, Illustrations & Digital Media Design" },
-  { name: "AI / ML", icon: <FaRobot />, percentage: 65, description: "Machine Learning Models, Data Science, Python, Predictive Analytics & AI Integration" },
 ]);
 
 useEffect(() => {
@@ -120,7 +119,7 @@ const experience = [
   {
   title: "Team Lead - Climate-Tech Team",
   company: "Guild Code Community",
-  period: "March 2026 - July 2026",
+  period: "March 2026 - May 2026",
   location: "Remote, Kenya",
   description:
     "Lead a multidiscplinary team in the design and development of a digital climate-tech solution aimed at addressing climate challenges in Africa through data-driven insights and modern web technologies.",
@@ -167,6 +166,40 @@ const experience = [
 ];
 
 const projects = [
+  {
+  title: "Route Weather AI Optimizer",
+  image: "/weather-optimizer.png",
+  problem: "Traditional weather tools use point-to-point lookups, failing to account for severe localized hazards, micro-climates, and crosswinds that occur simultaneously along critical highway corridors.",
+  solution: "Built a corridor-based risk panel using React and Node.js. Overhauled backend middleware to support 10MB data stream buffers for large GIS polyline payloads, engineered an asynchronous coordinate downsampling filter, and implemented a staggered sleep multiplier loop to bypass upstream API rate limits.",
+  result: "Automated real-time safety tracking for long-distance cyclists and transit fleets, flagging active atmospheric risks like wind shear (>15 kph) and heavy precipitation using a dynamic visual state machine.",
+  skills: ["Node.js", "Express.js", "React.js", "Leaflet", "REST APIs", "GIS Processing"],
+  role: "Full Stack Engineer",
+  summary: "A high-capacity transit telemetry and meteorological risk panel tracking localized highway hazards in real time.",
+  link: "https://route-weather-ai-optimizer-qczp-6vjrqtgjx-kennedy-projects.vercel.app/r" 
+},
+
+{
+  title: "Image-to-Text Recognition System",
+  image: "/optic-nerve.png",
+  problem: "Natural scene images often suffer from uneven lighting, background noise, and overlapping duplicate bounding boxes, which heavily degrade text extraction accuracy in deep learning OCR systems.",
+  solution: "Engineered an end-to-end computer vision pipeline. Built a 4-stage image pre-processing routine utilizing Adaptive Thresholding and Morphological Dilation with OpenCV. Integrated EasyOCR (CRAFT + CRNN models) and implemented a custom Non-Maximum Suppression (NMS) algorithm matching an IoU threshold of ≤ 0.30 to eliminate redundant detections.",
+  result: "Successfully isolated text fields out of complex environments and produced clean, annotated outputs using Softmax-derived confidence filtering (≥ 0.60) to maintain an optimized precision-recall balance.",
+  skills: ["Python", "EasyOCR", "OpenCV", "NumPy", "Computer Vision", "Deep Learning"],
+  role: "ML Engineer",
+  summary: "A production-quality computer vision pipeline using deep learning and image conditioning to extract text from natural scene images.",
+  link: "https://github.com/mwangi-kennedy/natural-scene-ocrf"
+},
+{
+  title: "Skill-to-Role Matching Engine",
+  image: "/recommender.png",
+  problem: "Standard text search and distance-based matching algorithms fail to properly weight niche versus generic skills, often miscalculating career alignment due to vector size disparities.",
+  solution: "Engineered a content-based filtering recommendation engine using Python and Scikit-Learn. Built a 4-step pipeline that ingests user skill profiles, transforms inputs using TF-IDF weighting to penalize common keywords, and applies mathematical Cosine Similarity scoring against an extended tech job role matrix.",
+  result: "Eliminated vector magnitude bias to deliver a highly accurate Top-3 career recommendation system with dynamic match percentages and instant processing speeds.",
+  skills: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Machine Learning", "Mathematical Modeling"],
+  role: "AI Engine Developer",
+  summary: "An AI-powered content-based filtering recommendation engine tracking mathematical career alignment using TF-IDF and Cosine Similarity.",
+  link: "https://github.com/mwangi-kennedy/skill-to-role-matching-engine"
+},
   {
   title: "Data Analytics Dashboard",
   image: "/data.png",
@@ -584,7 +617,7 @@ const projects = [
           <option value="" disabled>
             Service Of Interest
           </option>
-          <option>Data Analysis</option>
+          <option>Data Engineering</option>
           <option>Mobile Development</option>
           <option>Website Development</option>
           <option>UI/UX Design</option>
@@ -658,11 +691,10 @@ const projects = [
         </div>
         <div className="footer-column">
           <h3>Services</h3>
-          <p>Data Analytics</p>
-          <p>Frontend Development</p>
+          <p>Data Engineering</p>
+          <p>SoftwareDevelopment</p>
           <p>UI/UX Design</p>
           <p>Machine Learning</p>
-          <p>3D Animation</p>
           <p>Graphic Design</p>
         </div>
         <div className="footer-column">
