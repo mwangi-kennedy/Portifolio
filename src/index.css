@@ -107,17 +107,19 @@ body::before {
   padding: 0 8%;
   padding-top: 120px;
 }
-.hero-circle img{
+.hero-circle img {
   width: 450px;
   height: 450px;
-  border-radius: 0%;
+  border-radius: 50%; 
   object-fit: cover;
+  
+
+  object-position: center 15%; 
+  
   background: radial-gradient(circle at center, #1e293b 40%, #0f172a 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 80px rgba(255, 122, 0, 0.35);
   border: 2px solid rgba(255, 122, 0, 0.4);
+  box-shadow: 0 0 80px rgba(255, 122, 0, 0.35);
+  
 }
 
 

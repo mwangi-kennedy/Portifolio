@@ -131,6 +131,19 @@ const experience = [
     "Collaborated with developers and designers to build a functional climate-tech digital product."
   ],
   tools: ["Project Leadership", "Team Coordination", "Collaboration", "Data-Driven Decision Making", "Version Control", "Data Analysis"]
+  },
+  {
+  "title": "AI Coding Trainer (Volunteer)",
+  "company": "International Olympiad in Artificial Intelligence (IOAI)",
+  "period": "April 2026",
+  "location": "Kazakhstan (Remote)",
+  "description": "Volunteered to train international students competing in the global artificial intelligence olympiad.",
+  "achievements": [
+    "Designed a comprehensive training curriculum to teach image classification from scratch.",
+    "Developed production-ready codebase and materials for online instructional sessions.",
+    "Mentored students in Kazakhstan on core computer vision architectures and machine learning pipelines."
+  ],
+  "tools": ["Python", "Computer Vision", "Deep Learning", "Image Classification"]
 },
   {
   title: "Data Analyst Intern",
@@ -175,7 +188,7 @@ const projects = [
   skills: ["Node.js", "Express.js", "React.js", "Leaflet", "REST APIs", "GIS Processing"],
   role: "Full Stack Engineer",
   summary: "A high-capacity transit telemetry and meteorological risk panel tracking localized highway hazards in real time.",
-  link: "https://route-weather-ai-optimizer-qczp-6vjrqtgjx-kennedy-projects.vercel.app/r" 
+  link: "https://route-weather-ai-optimizer-qczp-6vjrqtgjx-kennedy-projects.vercel.app/" 
 },
 
 {
@@ -187,7 +200,7 @@ const projects = [
   skills: ["Python", "EasyOCR", "OpenCV", "NumPy", "Computer Vision", "Deep Learning"],
   role: "ML Engineer",
   summary: "A production-quality computer vision pipeline using deep learning and image conditioning to extract text from natural scene images.",
-  link: "https://github.com/mwangi-kennedy/natural-scene-ocrf"
+  link: "https://github.com/mwangi-kennedy/natural-scene-ocr"
 },
 {
   title: "Skill-to-Role Matching Engine",
@@ -236,13 +249,13 @@ const projects = [
   {
   title: "UI/UX Design",
   image: "/UI.png",
-  problem: "Many tech platforms struggle with complex interfaces that make it difficult for users to navigate services and complete onboarding efficiently.",
-  solution: "Designed intuitive wireframes and high-fidelity prototypes in Figma for a multi-service tech platform. Focused on clear navigation, structured layouts, and modern visual design to improve usability and guide users smoothly through service exploration and onboarding.",
-  result: "Delivered a scalable and user-friendly interface concept that simplifies service navigation and enhances the overall user experience for new and returning users.",
+  problem: "Cluttered interfaces make onboarding slow and navigation frustrating for users.",
+  solution: "Designed clean wireframes and high-fidelity Figma prototypes for a multi-service platform, prioritizing structured layouts and intuitive user flows.",
+  result: "A streamlined, scalable UI concept that cuts onboarding friction and simplifies service discovery.",
   skills: ["Figma", "Wireframing", "Prototyping", "UI/UX Design"],
   role: "UI/UX Designer",
   summary: "Figma-based UI/UX design for a multi-service tech platform focusing on intuitive navigation and modern user experience.",
-  link: "https://www.figma.com/design/OP5KLrUSRM8pJKJcUoSNQw/Ken-Media-UI?node-id=0-1&t=2FFSWu8liwycrm5j-1"
+  link: "https://www.figma.com/team_invite/redeem/bMO4keGwjiAUzhXP5y0l9T?t=CMerMR7NXr2Q3Rke-21"
 },
 {
   title: "Graphic Design",
@@ -288,8 +301,8 @@ const projects = [
       <section className="hero" id="home">
         <div className="hero-left">
           <h1 className="hero-role">Kennedy Mwangi</h1>
-          <h2 className="hero-name">Data Scientist & Software Engineer | Building Intelligent, Data-Driven & User-Focused Digital Solutions.</h2>
-          <p className="hero-desc"> I sit at the intersection of Data, Technology and Design. From analyzing complex datasets and building AI-powered systems to crafting beautiful, responsive interfaces bringing a full-spectrum approach to solving meaningful problems across Africa and beyond.</p>
+          <h2 className="hero-name">AI & ML Specialist, Software Engineer & Data Scientist | Building Intelligent, Data-Driven & User-Focused Digital Solutions.</h2>
+          <p className="hero-desc"> I sit at the intersection of AI, software engineering, and data science. From building intelligent systems and analyzing complex datasets to crafting responsive interfaces, I bring a full-spectrum approach to solving problems across Africa and beyond.</p>
 
           <div className="social-icons">
             <a href="https://github.com/mwangi-kennedy" target="_blank" rel="noreferrer">
@@ -363,33 +376,23 @@ const projects = [
 <section className="about" id="about">
   <div className="about-container">
     
-    <div className="about-left">
-      <div className="about-circle">
-        <img
-          src="/profile.png" alt="About"
-        />
-      </div>
-    </div>
+  
 
     <div className="about-right">
       <h2 className="section-title">About Me</h2>
 
-      <p>
-        I am a passionate <span>results-oriented Data Analyst and Software Engineer</span> with a background in Information Technology. Over the years, I have developed expertise in data visualization, statistical modeling, and business intelligence, transforming raw data into actionable insights that drive strategic decisions.</p>
+     <p> I am an <span>AI & ML Specialist, Software Engineer and Data Scientist</span> with a background in Information Technology. I build intelligent systems, write scalable code and analyze complex datasets to turn raw numbers into clear, actionable strategies.</p>
 
-      <p>
-        Driven by curiosity and a focus on impact, I build smarter, user-centered software and leverage AI/ML to solve complex problems. My goal is to empower organizations to make data-driven decisions through clear storytelling, compelling visuals, and accurate, actionable analysis.</p>
+      <p> Focused on building high-impact solutions, I design user-centered software and deploy machine learning models to solve complex problems. My goal is to empower organizations through reliable engineering, clear data storytelling and robust tools.</p>
 
-      <p>
-        I am continuously learning and exploring emerging technologies in networking, AI, and software development to create tools and solutions that not only work efficiently but also enhance the user experience. </p>
-
+      <p> By combining full-stack engineering, advanced analytics and AI, I create efficient systems that optimize performance and deliver great user experiences.</p>
       <div className="about-highlights">
         <div>
-          <h3>1+</h3>
+          <h3>2.5+</h3>
           <span>Years Experience</span>
         </div>
         <div>
-          <h3>7+</h3>
+          <h3>10+</h3>
           <span>Projects Completed</span>
         </div>
       </div>
