@@ -188,7 +188,7 @@ const projects = [
   skills: ["Node.js", "Express.js", "React.js", "Leaflet", "REST APIs", "GIS Processing"],
   role: "Full Stack Engineer",
   summary: "A high-capacity transit telemetry and meteorological risk panel tracking localized highway hazards in real time.",
-  link: "https://route-weather-ai-optimizer-qczp-6vjrqtgjx-kennedy-projects.vercel.app/" 
+  link: "https://route-weather-ai-optimizer-qczp-py5zc85sc-kennedy-projects.vercel.app/" 
 },
 
 {
